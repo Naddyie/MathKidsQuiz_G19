@@ -16,8 +16,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author User
  */
-@WebServlet("/index.jsp")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/index")
+public class IndexServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private UserDAO userDAO;
 
