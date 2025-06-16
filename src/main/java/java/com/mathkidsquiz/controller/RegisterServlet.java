@@ -46,7 +46,7 @@ public class RegisterServlet extends HttpServlet {
             if (userDAO.registerUser(newUser)) {
                 // Registration successful
                 request.setAttribute("successMessage", "Registration successful! You can now log in.");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
                 dispatcher.forward(request, response);
             } else {
                 // Registration failed (e.g., username/email already exists)
