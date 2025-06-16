@@ -27,7 +27,7 @@
                     <c:choose>
                         <%-- If user is NOT logged in --%>
                         <c:when test="${sessionScope.currentUser == null}">
-                            <li><a href="<%= request.getContextPath() %>/login">Login</a></li>
+                            <li><a href="<%= request.getContextPath() %>/index">Login</a></li>
                             <li><a href="<%= request.getContextPath() %>/register">Register</a></li>
                         </c:when>
                         <%-- If user IS logged in --%>
