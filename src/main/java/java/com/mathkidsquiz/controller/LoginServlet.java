@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author User
  */
-@WebServlet("/index")
+@WebServlet("/index.jsp")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private UserDAO userDAO;
@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // Just forward to the login JSP for GET requests
-        RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -53,7 +53,7 @@ public class LoginServlet extends HttpServlet {
         } else {
             // Login failed
             request.setAttribute("errorMessage", "Invalid username or password.");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
             dispatcher.forward(request, response);
         }
     }
