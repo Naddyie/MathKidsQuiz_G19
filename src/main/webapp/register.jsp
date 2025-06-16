@@ -47,7 +47,7 @@
                 <% } %>
                 <button type="submit" class="button button-primary">Register</button>
             </form>
-            <p>Already have an account? <a href="<%= request.getContextPath() %>/login">Login here</a></p>
+            <p>Already have an account? <a href="<%= request.getContextPath() %>/index.jsp">Login here</a></p>
         </div>
     </body>
 </html>
