@@ -33,7 +33,7 @@
                 <% } %>
                 <button type="submit" class="button button-primary">Login</button>
             </form>
-            <p>Don't have an account? <a href="<%= request.getContextPath() %>/register">Register here</a></p>
+            <p>Don't have an account? <a href="<%= request.getContextPath() %>/register.jsp">Register here</a></p>
         </div>
     </body>
 </html>
