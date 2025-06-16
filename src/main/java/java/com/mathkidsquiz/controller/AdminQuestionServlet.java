@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/admin/questions.jsp") // Maps this servlet to /admin/questions URL
+@WebServlet("/admin/questions") // Maps this servlet to /admin/questions URL
 public class AdminQuestionServlet extends HttpServlet {
 
     private QuestionDAO questionDAO;

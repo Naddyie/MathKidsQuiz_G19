@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author User
  */
-@WebServlet("/admin/users.jsp")
+@WebServlet("/admin/users")
 public class AdminUserServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private UserDAO userDAO;

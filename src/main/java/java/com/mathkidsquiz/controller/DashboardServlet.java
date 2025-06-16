@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/dashboard.jsp") // This servlet handles the /dashboard URL for all users
+@WebServlet("/dashboard") // This servlet handles the /dashboard URL for all users
 public class DashboardServlet extends HttpServlet {
 
     @Override

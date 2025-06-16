@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/user/quiz_results.jsp") // Maps to /user/results
+@WebServlet("/user/quiz_results") // Maps to /user/results
 public class QuizResultServlet extends HttpServlet {
 
     private QuizResultDAO quizResultDAO;
